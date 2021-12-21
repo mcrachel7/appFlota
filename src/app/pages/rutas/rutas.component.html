@@ -1,0 +1,27 @@
+
+    <nz-table #basicTable [nzData]="listOfRutas">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Distancia</th>
+          <th>Lugar_Final</th>
+          <th>Lugar_Inicio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data.Distancia }}</td>
+          <td>{{ data.Lugar_Final }}</td>
+          <td>{{ data.Lugar_Inicio }}</td>
+          <td>
+            <a>Action 一 {{ data.ID }}</a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a>Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    
+
+  

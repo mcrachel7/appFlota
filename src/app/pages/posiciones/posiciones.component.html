@@ -1,0 +1,27 @@
+
+    <nz-table #basicTable [nzData]="listOfPOS">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Altitud</th>
+          <th>Latitud</th>
+          <th>Longitud</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data.Altitud }}</td>
+          <td>{{ data.Latitud }}</td>
+          <td>{{ data.Longitud }}</td>
+          <td>
+            <a>Action 一 {{ data.ID }}</a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a>Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    
+
+  
